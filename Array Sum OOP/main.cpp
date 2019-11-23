@@ -7,9 +7,17 @@
 //
 
 #include <iostream>
+#include "arraylib.hpp"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    int n = 0;
+    std::cout << "n > ";
+    std::cin >> n;
+    int arr[n];
+    for (auto& i: arr) {
+        std::cin >> i;
+    }
+    std::cout << arrayLib::arraySum(arr, n) << std::endl;
     return 0;
 }
