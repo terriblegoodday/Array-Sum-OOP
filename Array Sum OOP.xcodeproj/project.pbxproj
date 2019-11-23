@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7795BDC823890C8400A22D4B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7795BDC723890C8400A22D4B /* main.cpp */; };
+		7795BDD223890D8600A22D4B /* arraylib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7795BDD023890D8600A22D4B /* arraylib.cpp */; };
+		7795BDF223891C0C00A22D4B /* Array_Sum_OOP_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7795BDF123891C0C00A22D4B /* Array_Sum_OOP_Tests.m */; };
+		7795BDF723891C1500A22D4B /* arraylib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7795BDD023890D8600A22D4B /* arraylib.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +28,22 @@
 /* Begin PBXFileReference section */
 		7795BDC423890C8400A22D4B /* Array Sum OOP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Array Sum OOP"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7795BDC723890C8400A22D4B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		7795BDD023890D8600A22D4B /* arraylib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = arraylib.cpp; sourceTree = "<group>"; };
+		7795BDD123890D8600A22D4B /* arraylib.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = arraylib.hpp; sourceTree = "<group>"; };
+		7795BDEF23891C0C00A22D4B /* Array Sum OOP Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Array Sum OOP Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7795BDF123891C0C00A22D4B /* Array_Sum_OOP_Tests.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = Array_Sum_OOP_Tests.m; sourceTree = "<group>"; };
+		7795BDF323891C0C00A22D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7795BDC123890C8400A22D4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7795BDEC23891C0C00A22D4B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				7795BDC623890C8400A22D4B /* Array Sum OOP */,
+				7795BDF023891C0C00A22D4B /* Array Sum OOP Tests */,
 				7795BDC523890C8400A22D4B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				7795BDC423890C8400A22D4B /* Array Sum OOP */,
+				7795BDEF23891C0C00A22D4B /* Array Sum OOP Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +74,36 @@
 		7795BDC623890C8400A22D4B /* Array Sum OOP */ = {
 			isa = PBXGroup;
 			children = (
+				7795BDCF23890CCF00A22D4B /* include */,
+				7795BDCE23890CCC00A22D4B /* src */,
 				7795BDC723890C8400A22D4B /* main.cpp */,
 			);
 			path = "Array Sum OOP";
+			sourceTree = "<group>";
+		};
+		7795BDCE23890CCC00A22D4B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				7795BDD023890D8600A22D4B /* arraylib.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		7795BDCF23890CCF00A22D4B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				7795BDD123890D8600A22D4B /* arraylib.hpp */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		7795BDF023891C0C00A22D4B /* Array Sum OOP Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7795BDF123891C0C00A22D4B /* Array_Sum_OOP_Tests.m */,
+				7795BDF323891C0C00A22D4B /* Info.plist */,
+			);
+			path = "Array Sum OOP Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,16 +126,37 @@
 			productReference = 7795BDC423890C8400A22D4B /* Array Sum OOP */;
 			productType = "com.apple.product-type.tool";
 		};
+		7795BDEE23891C0C00A22D4B /* Array Sum OOP Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7795BDF423891C0C00A22D4B /* Build configuration list for PBXNativeTarget "Array Sum OOP Tests" */;
+			buildPhases = (
+				7795BDEB23891C0C00A22D4B /* Sources */,
+				7795BDEC23891C0C00A22D4B /* Frameworks */,
+				7795BDED23891C0C00A22D4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Array Sum OOP Tests";
+			productName = "Array Sum OOP Tests";
+			productReference = 7795BDEF23891C0C00A22D4B /* Array Sum OOP Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		7795BDBC23890C8400A22D4B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Eduard Dzhumagaliev";
 				TargetAttributes = {
 					7795BDC323890C8400A22D4B = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					7795BDEE23891C0C00A22D4B = {
 						CreatedOnToolsVersion = 10.3;
 					};
 				};
@@ -109,9 +174,20 @@
 			projectRoot = "";
 			targets = (
 				7795BDC323890C8400A22D4B /* Array Sum OOP */,
+				7795BDEE23891C0C00A22D4B /* Array Sum OOP Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7795BDED23891C0C00A22D4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7795BDC023890C8400A22D4B /* Sources */ = {
@@ -119,6 +195,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7795BDC823890C8400A22D4B /* main.cpp in Sources */,
+				7795BDD223890D8600A22D4B /* arraylib.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7795BDEB23891C0C00A22D4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7795BDF223891C0C00A22D4B /* Array_Sum_OOP_Tests.m in Sources */,
+				7795BDF723891C1500A22D4B /* arraylib.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +340,40 @@
 			};
 			name = Release;
 		};
+		7795BDF523891C0C00A22D4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HA8PQ78LFS;
+				INFOPLIST_FILE = "Array Sum OOP Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "terriblegoodday.Array-Sum-OOP-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7795BDF623891C0C00A22D4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HA8PQ78LFS;
+				INFOPLIST_FILE = "Array Sum OOP Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "terriblegoodday.Array-Sum-OOP-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -271,6 +391,15 @@
 			buildConfigurations = (
 				7795BDCC23890C8400A22D4B /* Debug */,
 				7795BDCD23890C8400A22D4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7795BDF423891C0C00A22D4B /* Build configuration list for PBXNativeTarget "Array Sum OOP Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7795BDF523891C0C00A22D4B /* Debug */,
+				7795BDF623891C0C00A22D4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
