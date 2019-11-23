@@ -2,4 +2,5 @@
 Array sum library for my OOP classes
 
 To run tests: `cmd+u`
-To debug: `cmd+r'
+
+To debug: `cmd+r`
