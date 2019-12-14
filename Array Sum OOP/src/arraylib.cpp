@@ -12,5 +12,4 @@
 int arrayLib::arraySum(int *arr, unsigned int n) {
     int sum = 0;
     return std::accumulate(arr, arr+n, sum);
-    return sum;
 }
